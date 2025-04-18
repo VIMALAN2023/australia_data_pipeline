@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: public   # Reference 'public' schema, not 'raw'
+    tables:
+      - name: abr_data
+      - name: common_crawl_data

@@ -1,0 +1,116 @@
+[0m12:53:07.282465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEDE1D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEDDBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEDDBBD0>]}
+
+
+============================== 12:53:07.282465 | 15b919d9-8d21-4f36-91a0-dc14f4704dec ==============================
+[0m12:53:07.282465 [info ] [MainThread]: Running with dbt=1.9.4
+[0m12:53:07.298091 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Vimalan\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init company_data_pipeline', 'send_anonymous_usage_stats': 'True'}
+[0m12:53:07.418767 [debug] [MainThread]: Starter project path: C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m12:53:07.553766 [info ] [MainThread]: 
+Your new dbt project "company_data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:53:07.614527 [info ] [MainThread]: Setting up your profile.
+[0m13:00:55.874188 [error] [MainThread]: Encountered an error:
+
+[0m13:00:56.036902 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:00:56.036902 [debug] [MainThread]: Command `dbt init` failed at 13:00:56.036902 after 469.02 seconds
+[0m13:00:56.036902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEE3DE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEE4D610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FAEE4D590>]}
+[0m13:00:56.036902 [debug] [MainThread]: Flushing usage events
+[0m13:08:17.421976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C9C9BA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C9780090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C9CD72D0>]}
+
+
+============================== 13:08:17.428112 | ad3d3f32-d499-4284-b211-27f86728ec4f ==============================
+[0m13:08:17.428112 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:08:17.438663 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Vimalan\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init company_data_pipeline', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:08:17.521567 [debug] [MainThread]: Starter project path: C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m13:08:17.682258 [info ] [MainThread]: 
+Your new dbt project "company_data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:08:17.684782 [info ] [MainThread]: Setting up your profile.
+[0m13:08:52.743499 [info ] [MainThread]: Profile company_data_pipeline written to C:\Users\Vimalan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:08:52.752746 [debug] [MainThread]: Command `dbt init` succeeded at 13:08:52.752746 after 35.61 seconds
+[0m13:08:52.754738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C34C6F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C9D08190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208C9D08C10>]}
+[0m13:08:52.756739 [debug] [MainThread]: Flushing usage events
+[0m13:08:53.976319 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:59:26.214326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214ECC9EF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214EC74F650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214ECC9DCD0>]}
+
+
+============================== 14:59:26.221331 | 8f2917aa-0f42-46be-9994-a267bffccb92 ==============================
+[0m14:59:26.221331 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:59:26.223330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Vimalan\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init my_project', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:59:26.276340 [debug] [MainThread]: Starter project path: C:\Users\Vimalan\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m14:59:26.346010 [info ] [MainThread]: 
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:59:26.349008 [info ] [MainThread]: Setting up your profile.
+[0m14:59:57.059679 [info ] [MainThread]: Profile my_project written to C:\Users\Vimalan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:59:57.063711 [debug] [MainThread]: Command `dbt init` succeeded at 14:59:57.062697 after 31.00 seconds
+[0m14:59:57.065692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214EC8584D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E6427190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E6427150>]}
+[0m14:59:57.067693 [debug] [MainThread]: Flushing usage events
+[0m14:59:58.163162 [debug] [MainThread]: An error was encountered while trying to flush usage events
